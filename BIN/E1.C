@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c,d;
+	int row,count=0;
+	clrscr();
+	printf("enter=");
+	scanf("%d",&row);
+	for(a=0;a<=row;a++)
+	{       printf("\n");
+		for(b=row;b>a;b--)
+		{
+			printf("*");
+		}
+		for(c=count;c>0;c--)
+		{
+			printf(" ");
+		}
+		for(d=row;d>a;d--)
+		{
+			printf("*");
+		}
+		count=count+2;
+		//printf("\n");
+	} printf("\n");
+	//getch();
+
+	//int a,b,c,d;
+	//int row,count;
+	//scanf("%d",&row);
+	count=(row*2)-2;
+	for(a=1;a<row;a++)
+	{
+		for(b=0;b<=a;b++)
+		{
+			printf("*");
+		}
+		for(c=count;c>2;c--)
+		{
+			printf(" ");
+		}
+		for(d=0;d<=a;d++)
+		{
+			printf("*");
+		}
+		count=count-2;
+		printf("\n");
+	}
+	getch();
+}

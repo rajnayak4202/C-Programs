@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c,i,arr[50];
+	clrscr();
+	printf("enter number size=");
+	scanf("%d",&i);
+	printf("enter any %d number=\n",i);
+	for(a=0;a<i;a++)
+	{
+		printf("enter=");
+		scanf("%d",&arr[a]);
+	}
+	for(a=0;a<i;a++)
+	{
+		for(b=a+1;b<i;b++)
+		{
+			if(arr[a]>arr[b])
+			{
+				c=arr[a];
+				arr[a]=arr[b];
+				arr[b]=c;
+			}
+		}
+	}
+	for(a=0;a<i;a++)
+	{
+		printf("%d\n",arr[a]);
+	}
+	getch();
+}

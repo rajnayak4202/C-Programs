@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void swap(int *p,int *q)
+{
+	printf("\na=%d\nb=%d",*p,*q);
+	*p=*p+*q;
+	*q=*p-*q;
+	*p=*p-*q;
+	printf("\na=%d\nb=%d",*p,*q);
+}
+void main()
+{
+	int a,b,*p,*q;
+	clrscr();
+	scanf("%d",&a);
+	scanf("%d",&b);
+	p=&a;
+	q=&b;
+	swap(p,q);
+	printf("\n%d-%d",*p,*q);
+	getch();
+}

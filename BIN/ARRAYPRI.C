@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int bno[50]={0},ano[50]={0},no,a,b,ans,count=0,dcount=0,i,j;
+	clrscr();
+	printf("enter=");
+	scanf("%d",&no);
+	for(a=1;a<=no;a++)
+	{
+		for(b=2;b<a;b++)
+		{
+			ans=a%b;
+			if(ans==0)
+			{
+				break;
+			}
+		}
+		if(ans==0)
+		{
+			ano[count]=a;
+			count++;
+		}
+		if(ans!=0)
+		{
+			bno[dcount]=a;
+			dcount++;
+		}
+	}
+	for(i=0;i<count;i++)
+	{
+		printf("[%d]-",ano[i]);
+	}
+	printf("\n");
+	for(j=0;j<dcount;j++)
+	{
+		printf("[%d]-",bno[j]);
+	}
+	getch();
+}

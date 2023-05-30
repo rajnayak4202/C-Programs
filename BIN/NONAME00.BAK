@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c,d;
+	int row,count;
+	clrscr();
+	printf("enter=");
+	scanf("%d",&row);
+	count=4;
+	for(a=0;a<row;a++)
+	{}
+}
